@@ -6,7 +6,7 @@ public class SolutionRunner {
 
 	public static void main(String[] args) {
 		
-		TwoSum test = new TwoSum();
+		PalindromeNumber test = new PalindromeNumber();
 		test.run();
 		
 	}
