@@ -40,40 +40,40 @@ public class AddTwoNumbers {
 	    	
 	    }
 	    
-public ListNode addLists(ListNode l1, ListNode l2) {
-	    	
-	    	ListNode currentL1 = l1;
-	    	ListNode currentL2 = l2;
-	    	
-	    	ListNode answer = new ListNode();
-	    	ListNode answerCurrent = answer;
-	    	ListNode answerNext = null;
-	    	int carry = 0;
-	    	
-	    	while(currentL1 != null && currentL2 !=null) {
-	    		int sum = currentL1.val + currentL2.val;
-	    		if(carry > 0) {
-                    sum = sum + carry;
-                    carry = 0;
-	    		}	    		
-	    		if(sum >= 10) {
-	    			answerCurrent.val = sum - 10;
-	    			carry = 1;	    			
-	    		}else {
-	    			answerCurrent.val = sum;	
-	    		}
-                if(currentL1.next != null){
-                    answerNext = new ListNode();
-                    answerCurrent.next = answerNext;
-                    answerCurrent = answerNext;
-                }
-
-    			
-    			currentL1 = currentL1.next;
-    			currentL2 = currentL2.next;    		
-	    	}	    	
-	    	return answer;	  
-	    }
+//public ListNode addLists(ListNode l1, ListNode l2) {
+//	    	
+//	    	ListNode currentL1 = l1;
+//	    	ListNode currentL2 = l2;
+//	    	
+//	    	ListNode answer = new ListNode();
+//	    	ListNode answerCurrent = answer;
+//	    	ListNode answerNext = null;
+//	    	int carry = 0;
+//	    	
+//	    	while(currentL1 != null && currentL2 !=null) {
+//	    		int sum = currentL1.val + currentL2.val;
+//	    		if(carry > 0) {
+//                    sum = sum + carry;
+//                    carry = 0;
+//	    		}	    		
+//	    		if(sum >= 10) {
+//	    			answerCurrent.val = sum - 10;
+//	    			carry = 1;	    			
+//	    		}else {
+//	    			answerCurrent.val = sum;	
+//	    		}
+//                if(currentL1.next != null){
+//                    answerNext = new ListNode();
+//                    answerCurrent.next = answerNext;
+//                    answerCurrent = answerNext;
+//                }
+//
+//    			
+//    			currentL1 = currentL1.next;
+//    			currentL2 = currentL2.next;    		
+//	    	}	    	
+//	    	return answer;	  
+//	    }
 	    
 // public ListNode addLists(ListNode l1, ListNode l2) {
 //	    	
@@ -108,13 +108,8 @@ public ListNode addLists(ListNode l1, ListNode l2) {
 //	    	return answer;
 //	    }
 	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
+
+
 	    void printList(ListNode node)
 	    {
 	        while (node != null) {
