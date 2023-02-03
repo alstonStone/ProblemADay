@@ -6,7 +6,7 @@ public class SolutionRunner {
 
 	public static void main(String[] args) {
 		
-		PalindromeNumber test = new PalindromeNumber();
+		RomanToInteger test = new RomanToInteger();
 		test.run();
 		
 	}
