@@ -1,3 +1,5 @@
 .metadata/
 CodeProblems/.*
 *.class
+.idea/
+ProblemADay.iml
