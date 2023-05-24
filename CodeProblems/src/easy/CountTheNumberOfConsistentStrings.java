@@ -5,11 +5,12 @@
 class CountTheNumberOfConsistentStrings {
 
     public int countConsistentStrings(String allowed, String[] words) {
+
         int sum = 0;
-        for(String s : words){
+        for(int i=0;i<words.length;i++){
             boolean status = true;
-            for(Character c: s.toCharArray()){
-                if(!contains(allowed,c)){
+            for(int j=0;j<words[i].length();j++){
+                if(!contains(allowed,words[i].charAt(j))){
                     status = false;
                     break;
                 }
@@ -19,19 +20,18 @@ class CountTheNumberOfConsistentStrings {
             }
         }
         return sum;
+
     }
 
 
-
     public boolean contains(String allowed, char letter){
-        for(Character c: allowed.toCharArray()){
-            if(c == letter){
+        for(int i=0;i<allowed.length();i++){
+            if(allowed.charAt(i) == letter){
                 return true;
             }
         }
         return false;
     }
 
-
-
+}
 }
