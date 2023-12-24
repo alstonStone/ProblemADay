@@ -1,3 +1,5 @@
+package medium;
+
 import java.util.ArrayList;
 
 class Solution {
@@ -21,7 +23,7 @@ class Solution {
         }
 
         int value = 1;
-        boolean running == true;
+        boolean running = true;
         while(running){
             Character lookingFor = lookingFor(value);
             int position = 0;

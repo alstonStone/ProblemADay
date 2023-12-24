@@ -1,3 +1,8 @@
+package easy;
+import java.util.Objects;
+
+import dataStructures.ListNode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,8 +13,8 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
-    public ListNode MiddleOfTheLinkedList(ListNode head) {
+class MiddleOfTheLinkedList {
+    public ListNode middleOfTheLinkedList(ListNode head) {
         int middleIndex = getLinkedListSize(head) / 2;
         return getValueAtIndexInLinkedList(middleIndex, head);
     }

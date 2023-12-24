@@ -1,3 +1,5 @@
+package easy;
+
 import java.util.ArrayList; // import the ArrayList class
 class NumberOfRectanglesThatCanFormTheLargestSquare{
     public int countGoodRectangles(int[][] rectangles) {
