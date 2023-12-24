@@ -1,6 +1,4 @@
-
-
-
+package easy;
 
 class CountTheNumberOfConsistentStrings {
 
@@ -34,4 +32,4 @@ class CountTheNumberOfConsistentStrings {
     }
 
 }
-}
+
